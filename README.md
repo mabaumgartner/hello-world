@@ -1,4 +1,4 @@
 # hello-world
 Hello World
 
-Just learning to use GitHub.
+Just learning to use GitHub and Git.
