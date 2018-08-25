@@ -1,4 +1,4 @@
 # hello-world
 Hello World
 
-This is a test file for CYBR 8420.
+Just learning to use GitHub.
