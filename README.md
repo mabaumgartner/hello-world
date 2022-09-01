@@ -7,7 +7,7 @@ Now adding some remote changes to pull to a local repository.
 - [Intro](#intro)
   - [Point 1](#point-1)
   - [Point 2](#point-2)
-      - [Point 2.1](#point-21)
+    - [Point 2a](#point-2a)
   - [Conclusion](#conclusion)
 
 ## Intro
@@ -22,7 +22,7 @@ blah
 
 blah
 
-##### Point 2.1
+#### Point 2a
 
 blah blah
 
