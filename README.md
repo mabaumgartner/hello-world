@@ -4,9 +4,9 @@ Hello World.  Just learning to use GitHub and Git.
 
 - [Intro](#intro)
   - [Point A1](#point-a1)
-  - [Point 2](#point-2)
+  - [Point A2](#point-a2)
     - [Point 2a](#point-2a)
-  - [Conclusion](#conclusion)
+- [Conclusion](#conclusion)
 
 ## Intro
 
@@ -16,7 +16,7 @@ Combined intro goes here.
 
 previous work
 
-### Point 2
+### Point A2
 
 adds supporting information
 
@@ -24,6 +24,6 @@ adds supporting information
 
 Here is some new content.
 
-### Conclusion
+## Conclusion
 
 the end
