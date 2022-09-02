@@ -18,7 +18,7 @@ Summary
 
 ### Point 2
 
-blah
+supporting information
 
 #### Point 2a
 
