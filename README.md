@@ -3,18 +3,18 @@
 Hello World.  Just learning to use GitHub and Git.
 
 - [Intro](#intro)
-  - [Point 1](#point-1)
+  - [Point A1](#point-a1)
   - [Point 2](#point-2)
     - [Point 2a](#point-2a)
   - [Conclusion](#conclusion)
 
 ## Intro
 
-This is my intro
+Combined intro goes here.
 
-### Point 1
+### Point A1
 
-Summary - TBD
+previous work
 
 ### Point 2
 
