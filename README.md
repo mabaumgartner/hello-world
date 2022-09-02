@@ -22,7 +22,7 @@ adds supporting information
 
 #### Point 2a
 
-blah blah blah
+Here is some new content.
 
 ### Conclusion
 
