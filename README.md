@@ -18,7 +18,7 @@ Summary
 
 ### Point 2
 
-supporting information
+adds supporting information
 
 #### Point 2a
 
