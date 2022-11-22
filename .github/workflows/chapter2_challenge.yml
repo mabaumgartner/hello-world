@@ -1,0 +1,40 @@
+name: ch2_challenge
+on: push
+jobs:
+  
+  job1:
+    name: Linux Date
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step one
+        uses: actions/checkout@v2
+      - name: Step two
+        run: date
+
+  job2:
+    name: Windows Date
+    runs-on: windows-latest
+    steps:
+      - name: Step one
+        uses: actions/checkout@v2
+      - name: Step two
+        run: "Get-Date"
+  
+  job3:
+    name: MacOS Date
+    runs-on: macos-latest
+    steps:
+      - name: Step one
+        uses: actions/checkout@v2
+      - name: Step two
+        run: date
+
+  job4:
+    name: Second Job
+    runs-on: ubuntu-22.04
+    needs: [job1,job2,job3]
+    steps:
+      - name: Step one
+        uses: actions/checkout@v2
+      - name: Step two
+        run: date
