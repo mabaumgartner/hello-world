@@ -6,8 +6,6 @@ jobs:
     name: Linux Date
     runs-on: ubuntu-latest
     steps:
-      - name: Step one
-        uses: actions/checkout@v2
       - name: Step two
         run: date
 
@@ -15,8 +13,6 @@ jobs:
     name: Windows Date
     runs-on: windows-latest
     steps:
-      - name: Step one
-        uses: actions/checkout@v2
       - name: Step two
         run: "Get-Date"
   
@@ -24,8 +20,6 @@ jobs:
     name: MacOS Date
     runs-on: macos-latest
     steps:
-      - name: Step one
-        uses: actions/checkout@v2
       - name: Step two
         run: date
 
@@ -34,7 +28,5 @@ jobs:
     runs-on: ubuntu-22.04
     needs: [job1,job2,job3]
     steps:
-      - name: Step one
-        uses: actions/checkout@v2
       - name: Step two
         run: date
