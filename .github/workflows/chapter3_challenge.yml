@@ -1,5 +1,5 @@
 name: ch3_challenge
-on: [push]
+on: [release]
 jobs:
   
   job1:
