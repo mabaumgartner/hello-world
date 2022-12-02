@@ -1,0 +1,18 @@
+name: ch3_challenge
+on: [push]
+jobs:
+  
+  job1:
+    env: 
+      ARTIFACT_NAME: Chapter3Challenge
+
+    name: Checkout and Upload Artifact
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with: 
+          name: ${{ env.ARTIFACT_NAME }}
+          path: .
