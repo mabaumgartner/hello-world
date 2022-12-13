@@ -1,4 +1,4 @@
-name: ch4_challenge
+name: Lint with PSScriptAnalyzer
 on: [push]
 jobs:
 
@@ -15,7 +15,8 @@ jobs:
         - name: Lint with PSScriptAnalyzer
           shell: pwsh
           run: |
-            Invoke-ScriptAnalyzer -Path *.ps1 -Recurse -Outvariable issues
+            (Get-Location).path | Write-Output
+            Invoke-ScriptAnalyzer -Path *.ps1 -Recurse -OutVariable issues
             $errors   = $issues.Where({$_.Severity -eq 'Error'})
             $warnings = $issues.Where({$_.Severity -eq 'Warning'})
             if ($errors) {
