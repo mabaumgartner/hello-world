@@ -1,5 +1,5 @@
 name: ch4_challenge
-on: [push]
+on: [release]
 jobs:
 
   test:
