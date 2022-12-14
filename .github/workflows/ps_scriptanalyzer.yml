@@ -1,9 +1,12 @@
 name: Lint with PSScriptAnalyzer
-on: [push]
-jobs:
+on:
+  pull_request:
+    branches:
+    - master
 
+jobs:
   lint-with-PSScriptAnalyzer:
-      name: Install and run PSScriptAnalyzer
+      name: Run PSScriptAnalyzer
       runs-on: windows-latest
       steps:
         - uses: actions/checkout@v3
@@ -15,7 +18,6 @@ jobs:
         - name: Lint with PSScriptAnalyzer
           shell: pwsh
           run: |
-            (Get-Location).path | Write-Output
             Invoke-ScriptAnalyzer -Path *.ps1 -Recurse -OutVariable issues
             $errors   = $issues.Where({$_.Severity -eq 'Error'})
             $warnings = $issues.Where({$_.Severity -eq 'Warning'})
